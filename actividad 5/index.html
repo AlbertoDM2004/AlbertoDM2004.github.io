@@ -14,7 +14,7 @@
 
 
 <main>
-
+<form>
     <fieldset>
         <legend>Datos Personales</legend>
         <p>
@@ -49,10 +49,74 @@
             <input type="text" id="cp" name="cp">
         </p>
     </fieldset>
+
+    <fieldset>
+        <legend>Forma de Acceso</legend>
+
+        <p>
+            <input type="radio" id="directo" name="forma de acceso" value="directo">
+            <label for="directo">Directo</label>
+        </p>
+
+        <blockquote>
+            <p>
+                <input type="radio" id="bachillerato" name="via_directa" value="bachillerato">
+                <label for="bachillerato">Bachillerato Log Modalidad</label>
+                <input type="text" name="bachillerato_detalles">
+            </p>
+            <p>
+                <input type="radio" id="experimental" name="via_directa" value="experimental">
+                <label for="experimental">Experimental</label>
+                <input type="text" name="experimental_detalles">
+            </p>
+            <p>
+                <input type="radio" id="cou" name="via_directa" value="cou">
+                <label for="cou">COU Opción</label>
+                <input type="text" name="cou_detalles">
+            </p>
+            <p>
+                <input type="radio" id="fp2" name="via_directa" value="fp2">
+                <label for="fp2">FP2</label>
+                <input type="text" name="fp2_detalles">
+            </p>
+            <p>
+                <input type="radio" id="otros_acceso" name="via_directa" value="otros">
+                <label for="otros_acceso">Otros (especifique)</label>
+                <input type="text" name="otros_acceso_detalles">  
+            </p>
+        </blockquote>
+
+        <p>
+            <input type="radio" id="prueba_libre" name="forma_acceso" value="prueba_libre">
+            <label for="prueba_libre">Prueba Libre</label>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Documentos Adjuntados</legend>
+        <p>
+            <input type="checkbox" id="dni_doc" name="documentos" value="fotocopia_dni">
+            <label for="dni_doc">Fotocopia DNI</label>
+
+            <input type="checkbox" id="certificado" name="documentos" value="certificado_academico">
+            <label for="certificado">Certificado Académico</label>
+        </p>
+        <p>
+            <input type="checkbox" id="otros_doc" name="documentos" value="otros">
+            <label for="otros_doc">Otros documentos (especifique)</label>
+            <input type="text" name="otros_documentos_detalles">
+        </p>
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar Solicitud">
+        <input type="reset" value="Limpiar datos">
+    </p>
+</form>
 </main>
 
 <footer>
-    © 2026
+    <p>2026 - Alberto Díaz</p>
 </footer>
 
 </body>
