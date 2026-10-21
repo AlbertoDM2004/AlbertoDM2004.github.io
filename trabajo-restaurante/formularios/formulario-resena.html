@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alberto Díaz Miñana">
+    <meta name="description" content="Página para formulario de reseñas">
+    <meta name="keywords" content="restaurante, los pacos, menú, platos, comida">
+    <title>Formulario de reseñas - Restaurante Los Pacos</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+</head>
+<body>
+
+<header>
+    <h1>Formulario de Reseñas</h1>
+</header>
+
+<nav>
+    <a href="../../index.html">Volver a la página principal</a>
+    <a href="../Restaurante.html">Volver a la carta</a>
+</nav>
+
+<main>
+    <form action="#" method="post">
+        <h2>Deje su reseña</h2>
+        <p>
+            <label for="plato">Elija un plato:</label>
+            <select id="plato" name="plato">
+                <option value="" disabled selected>-- Seleccione un plato --</option>
+                <option value="tortilla">Tortilla de Patatas</option>
+                <option value="paella">Paella Valenciana</option>
+                <option value="cachopo">Cachopo Asturiano</option>
+            </select>
+        </p>
+        <p>
+            <label for="nombre">Su nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+        </p>
+        <p>
+            <label for="reseña">Su reseña:</label><br>
+            <textarea id="reseña" name="reseña" rows="5" cols="50" placeholder="Escriba aquí su opinión sobre el plato..."></textarea>
+        </p>
+        <p>
+            <button type="submit">PUBLICAR RESEÑA</button>
+        </p>
+    </form>
+
+</main>
+
+<footer>
+    <p>2026 - Alberto Díaz - Restaurante Los Pacos.</p>
+</footer>
+
+</body>
+</html>
